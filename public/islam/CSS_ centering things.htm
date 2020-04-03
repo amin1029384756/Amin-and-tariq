@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- saved from url=(0052)https://www.w3.org/Style/Examples/007/center.en.html -->
+<html lang="en"><head profile="http://www.w3.org/2006/03/hcard"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CSS: centering things</title>
+
+  
+  <meta content="width=device-width" name="viewport">
+  <link href="./CSS_ centering things_files/main" media="screen, handheld, projection, tv" rel="stylesheet" title="Main">
+  <link href="https://www.w3.org/Style/CSS/floatspan-n" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade">
+  <link href="https://www.w3.org/Style/CSS/daily-color" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade">
+  <link href="https://www.w3.org/Style/CSS/floatspan" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade (older browsers)">
+  <link href="https://www.w3.org/Style/CSS/daily-color" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade (older browsers)">
+  <link href="https://www.w3.org/Style/CSS/asymmetric" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Asymmetric">
+  <link href="https://www.w3.org/Style/CSS/draft" media="screen, projection, tv" rel="alternate stylesheet" title="Draft 3">
+  <link href="https://www.w3.org/Style/CSS/draft-rg" media="screen, projection, tv" rel="alternate stylesheet" title="Draft 2">
+  <link href="./CSS_ centering things_files/twocolumn-print" media="print" rel="stylesheet">
+  <link href="https://www.w3.org/" rel="home" title="W3C">
+  <link href="https://www.w3.org/Style/CSS/" rel="top" title="CSS">
+  <link href="https://www.w3.org/Style/CSS/current-work" rel="chapter" title="Roadmap">
+  <link href="https://www.w3.org/Style/Examples/007/" rel="chapter" title="Examples">
+  <link href="https://www.w3.org/Consortium/activities" rel="bookmark" title="Activities">
+  <link href="https://www.w3.org/TR/" rel="bookmark" title="Tech. reports">
+  <link href="https://www.w3.org/Consortium/Translation/" rel="bookmark" title="Translations">
+  <link href="https://www.w3.org/Status" rel="bookmark" title="Software">
+  <link href="https://www.w3.org/Consortium/siteindex" rel="index" title="Site index">
+  <link href="https://www.w3.org/Help/search" rel="search" title="Search">
+  <link href="https://www.w3.org/Consortium/Legal/ipr-notice.html#Copyright" rel="copyright" title="Copyright">
+  <link href="https://www.w3.org/Style/Examples/007/center.en.html" rel="canonical">
+  <style type="text/css">
+  div.example {border: #603 dotted; padding: 0.5em; margin: 1em 2em}
+  p.blocktext {margin: 1em auto; width: 8em; text-align: left}
+  img.displayed {display: block; margin-left: auto; margin-right: auto}
+  div.container {height: 10em; display: table-cell; vertical-align: middle}
+  div.container p {margin: 0}
+  div.container3 {height: 10em; position: relative}
+  div.container3 p {margin: 0; position: absolute; top: 50%;
+   transform: translate(0, -50%)}
+  div.container5 {height: 10em; display: flex; align-items: center}
+  div.container5 p {margin: 0}
+  div.container4 {height: 10em; position: relative}
+  div.container4 p {margin: 0; position: absolute; background: yellow;
+   top: 50%; left: 50%; transform: translate(-50%, -50%)}
+  div.container6 {height: 10em; display: flex; align-items: center;
+   justify-content: center}
+  div.container6 p {margin: 0; background: yellow}
+  </style>
+  <link href="http://www.carionltd.com/Style/Example007/center.html" hreflang="az" rel="alternate" title="Azərbaycan">
+  <link href="http://dichev.com/Style/Examples/007/center/" hreflang="bg" rel="alternate" title="Български">
+  <link href="http://www.ich-lerne-css.de/Style/Examples/007/center.html" hreflang="de" rel="alternate" title="Deutsch">
+  <link href="http://www.greekcom.org/Style/Examples/007/center.htm" hreflang="el" rel="alternate" title="Ελληνικά">
+  <link href="https://www.w3.org/Style/Examples/007/center.en.html" hreflang="en" rel="alternate" title="English">
+  <link href="http://www.spanish-translator-services.com/espanol/t/007/center.html" hreflang="es" rel="alternate" title="Español">
+  <link href="https://www.w3.org/Style/Examples/007/center.fr.html" hreflang="fr" rel="alternate" title="Français">
+  <link href="http://www.erasparsa.com/w3/Style/Examples/007/center/" hreflang="id" rel="alternate" title="Bahasa Indonesia">
+  <link href="https://www.w3.org/Style/Examples/007/center.ja.html" hreflang="ja" rel="alternate" title="日本語 [2019-10-02]">
+  <link href="http://www.bjornenki.com/articles/w3_style_examples_007_center" hreflang="nb" rel="alternate" title="Norsk">
+  <link href="https://www.w3.org/Style/Examples/007/center.nl.html" hreflang="nl" rel="alternate" title="Nederlands">
+  <link href="https://www.w3.org/Style/Examples/007/center.pl.html" hreflang="pl" rel="alternate" title="Polski [2017-08-01]">
+  <link href="http://www.internetbootcamp.net/007/center.html" hreflang="pt" rel="alternate" title="Português">
+  <link href="https://www.w3.org/Style/Examples/007/center.pt_BR.html" hreflang="pt-br" rel="alternate" title="Português brasileiro">
+  <link href="https://www.w3.org/Style/Examples/007/center.ru.html" hreflang="ru" rel="alternate" title="Русский [2017-08-22]">
+  <link href="http://www.codingbasic.com/style/example/007/center.html" hreflang="th" rel="alternate" title="ไทย">
+  <link href="http://tl.tz8.de/style-examples-007-center.html" hreflang="tl" rel="alternate" title="Tagalog">
+  <link href="https://www.w3.org/Style/Examples/007/center.uk.html" hreflang="uk" rel="alternate" title="Українська [2017-08-22]">
+  <link href="http://www.300yards.com/007/center.html" hreflang="vi" rel="alternate" title="Tiếng Việt">
+  <link href="https://www.w3.org/Style/Examples/007/center.zh_CN.html" hreflang="zh-cn" rel="alternate" title="简体中文 [2016-11-29]">
+  <link href="https://www.w3.org/Style/Examples/007/center.zh_HK.html" hreflang="zh-hk" rel="alternate" title="繁體中文 [2016-11-29]">
+  <link href="https://www.w3.org/Style/Examples/007/Overview.en" rel="up" title="CSS: tips &amp; tricks">
+  <link href="https://www.w3.org/Style/Examples/007/figures.en" rel="first" title="CSS: figures &amp; captions">
+  <link href="https://www.w3.org/Style/Examples/007/fonts.en" rel="prev" title="CSS: fonts">
+  <link href="https://www.w3.org/Style/Examples/007/shadows.en" rel="next" title="CSS: drop shadows">
+  <link href="https://www.w3.org/Style/Examples/007/slideshow.en" rel="last" title="CSS: Using animation for automatic slideshows">
+
+ </head><body>
+  <div class="section" id="language">
+   <p><a href="https://www.w3.org/Style/Examples/007/center.en.html#translations">Languages</a>
+  </p></div>
+
+  <h1><em>Web Style Sheets</em> CSS tips &amp; tricks</h1>
+
+  <div class="section" id="intro">
+   <p>See also the <a href="https://www.w3.org/Style/Examples/007/">index</a> of all tips.
+  </p></div>
+
+  <div class="section" id="centering">
+   <h2>Centering things</h2>
+
+   <p>A common task for CSS is to center text or images. In fact,
+    there are three kinds of centering:
+
+   </p><ul>
+    <li><a href="https://www.w3.org/Style/Examples/007/center.en.html#text">Centering lines of text</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.en.html#block">Centering a block of text or an image</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.en.html#vertical">Centering a block or an image
+     vertically</a>
+   </li></ul>
+
+   <p>In recent implementations of CSS you can also use features from
+    level&nbsp;3, which allows centering absolutely positioned elements:
+
+   </p><ul>
+    <li><a href="https://www.w3.org/Style/Examples/007/center.en.html#vertical3">Centering vertically in level&nbsp;3</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.en.html#hv3">Centering vertically and horizontally in
+     level&nbsp;3</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.en.html#viewport3">Centering in the viewport in level&nbsp;3</a>
+   </li></ul>
+  </div>
+
+  <div class="section" id="text">
+   <h2>Centering lines of text</h2>
+
+   <p>The most common and (therefore) easiest type of centering is
+    that of lines of text in a paragraph or in a heading. CSS has the
+    property 'text-align' for that:
+
+   </p><pre>P { text-align: center }
+H2 { text-align: center }</pre>
+
+   <p>renders each line in a P or in a H2 centered between its
+    margins, like this:
+
+   </p><div class="example">
+    <p style="text-align: center">The lines in this paragraph are all
+     centered between the paragraph's margins, thanks to the value
+     'center' of the CSS property 'text-align'.
+   </p></div>
+  </div>
+
+  <div class="section" id="block">
+   <h2>Centering a block or image</h2>
+
+   <p>Sometimes it is not the text that needs to be centered, but the
+    block as a whole. Or, phrased differently: we want the left and
+    right margin to be equal. The way to do that is to set the margins
+    to 'auto'. This is normally used with a block of fixed width,
+    because if the block itself is flexible, it will simply take up all
+    the available width. Here is an example:
+
+   </p><pre>P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+...
+&lt;P class="blocktext"&gt;This rather...</pre>
+
+   <div class="example">
+    <p class="blocktext">This rather narrow block of text is centered.
+     Note that the lines inside the block are not centered (they are
+     left-aligned), unlike in the earlier example.
+   </p></div>
+
+   <p>This is also the way to center an image: make it into block of
+    its own and apply the margin properties to it. For example:
+
+   </p><pre>IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+...
+&lt;IMG class="displayed" src="..." alt="..."&gt;</pre>
+
+   <div class="example">
+    <p>The following image is centered: <img alt="some random image" class="displayed" src="./CSS_ centering things_files/woolly-mc.png">
+   </p></div>
+  </div>
+
+  <div class="section" id="vertical">
+   <h2>Centering vertically</h2>
+
+   <p>CSS level&nbsp;2 doesn't have a property for centering things
+    vertically. There will probably be one in CSS level&nbsp;3 (see <a href="https://www.w3.org/Style/Examples/007/center.en.html#vertical3" title="Centering vertically in level 3">below</a>). But even in CSS2 you can center blocks vertically, by combining
+    a few properties. The trick is to specify that the outer block is
+    to be formatted as a table cell, because the contents of a table
+    cell <em>can</em> be centered vertically.
+
+   </p><p>The example below centers a paragraph inside a block that has a
+    certain given height. A <a href="https://www.w3.org/Style/Examples/007/center-example">separate example</a> shows a paragraph that is centered vertically in the browser
+    window, because it is inside a block that is absolutely positioned
+    and as tall as the window.
+
+   </p><pre>DIV.container {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle }
+...
+&lt;DIV class="container"&gt;
+  &lt;P&gt;This small paragraph...
+&lt;/DIV&gt;</pre>
+
+   <div class="example">
+    <div class="container">
+     <p>This small paragraph is vertically centered.
+    </p></div>
+   </div>
+  </div>
+
+  <div class="section" id="vertical3">
+   <h2>Centering vertically in CSS level&nbsp;3</h2>
+
+   <p>CSS level&nbsp;3 offers other possibilities. At this time (2014), a
+    good way to center blocks vertically without using absolute
+    positioning (which may cause overlapping text) is still under
+    discussion. But if you know that overlapping text will not be a
+    problem in your document, you can use the 'transform' property to
+    center an absolutely positioned element. For example:
+
+   </p><div class="example">
+    <div class="container3">
+     <p>This paragraph is vertically centered.
+    </p></div>
+   </div>
+
+   <p>For a document that looks like this:
+
+   </p><pre>&lt;div class=container3&gt;
+  &lt;p&gt;This paragraph…
+&lt;/div&gt;</pre>
+
+   <p>the style sheet looks like this:
+
+   </p><pre>div.container3 {
+   height: 10em;
+   <b>position: relative</b> }              /* 1 */
+div.container3 p {
+   margin: 0;
+   <b>position: absolute;</b>               /* 2 */
+   <b>top: 50%;</b>                         /* 3 */
+   <b>transform: translate(0, -50%)</b> }   /* 4 */</pre>
+
+   <p>The essential rules are:
+
+   </p><ol>
+    <li> Make the container <em>relatively positioned,</em> which
+     declares it to be a container for absolutely positioned elements.
+
+    </li><li> Make the element itself <em>absolutely positioned.</em>
+
+    </li><li> Place it halfway down the container with 'top: 50%'. (Note
+     that 50%' here means 50% of the height of the container.)
+
+    </li><li> Use a translation to move the element up by half its own
+     height. (The '50%' in 'translate(0, -50%)' refers to the height of
+     the element itself.)
+   </li></ol>
+
+   <p>Recently (since about 2015), another technique has also become
+    available in several CSS implementations. It is based on the new
+    'flex' keyword for the 'display' property. This keyword is meant
+    for use in graphical user interfaces (GUIs), but nothing stops you
+    from using it in a document, if the document happens to have the
+    right structure.
+
+   </p><div class="example">
+    <div class="container5">
+     <p>This paragraph is vertically centered.
+    </p></div>
+   </div>
+
+   <p>the style sheet looks like this:
+
+   </p><pre>div.container5 {
+  height: 10em;
+  <b>display: flex;</b>
+  <b>align-items: center</b> }
+div.container5 p {
+  margin: 0 }</pre>
+  </div>
+
+  <div class="section" id="hv3">
+   <h2>Centering vertically and horizontally in CSS level&nbsp;3</h2>
+
+   <p>We can extend both methods to center horizontally <em>and</em>
+    vertically at the same time.
+
+   </p><p>A side-effect of making the paragraph absolutely positioned is
+    that it is then only as wide as it needs to be (unless we give it
+    an explicit width, of course). In the example below, that's
+    precisely what we want: We center a paragraph with just one word
+    (“Centered!”), so the width of the paragraph should be exactly the
+    width of that word.
+
+   </p><div class="example">
+    <div class="container4">
+     <p>Centered!
+    </p></div>
+   </div>
+
+   <p>The yellow background is there to show that the paragraph is
+    indeed only as wide as its contents. We assume the same mark-up as
+    before:
+
+   </p><pre>&lt;div class=container4&gt;
+  &lt;p&gt;Centered!
+&lt;/div&gt;</pre>
+
+   <p>The style sheet is similar to the previous example with respect
+    to the vertical centering. But we now move the element halfway
+    across the container as well, with 'left: 50%', and at the same
+    time move it leftwards by half its own width in the 'translate'
+    transformation:
+
+   </p><pre>div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    <b>left: 50%;</b>
+    <b>margin-right: -50%;</b>
+    transform: translate(<b>-50%,</b> -50%) }</pre>
+
+   <p>The next example below explains why the 'margin-right: -50%' is
+    needed.
+
+   </p><p>When the CSS formatter supports 'flex', it's even easier:
+
+   </p><div class="example">
+    <div class="container6">
+     <p>Centered!
+    </p></div>
+   </div>
+
+   <p>with this style sheet:
+
+   </p><pre>div.container6 {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  <b>justify-content: center</b> }
+div.container6 p {
+  margin: 0 }</pre>
+
+   <p>i.e., the only addition is the 'justify-content: center'. Just
+    like 'align-items' determines the vertical alignment of the
+    container's contents, 'justify-content' determines the horizontal
+    alignment. (It's actually a bit more complex, as their names
+    suggest, but in a simple case that's how it works.) A side-effect
+    of 'flex' is that the child element, the P in this case, is
+    automatically made as small as possible.
+  </p></div>
+
+  <div class="section" id="viewport3">
+   <h2>Centering in the viewport in CSS level&nbsp;3</h2>
+
+   <p>The default container for absolutely positioned elements is the
+    viewport. (In case of a browser, that means the browser window). So
+    centering an element in the viewport is very simple. Here is a
+    complete example. (This example uses HTML5 syntax.)
+
+   </p><pre>&lt;html&gt;
+  &lt;style&gt;
+    body {
+        background: white }
+    section {
+        background: black;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        <b>position: absolute;</b>
+        <b>top: 50%;</b>
+        <b>left: 50%;</b>
+        <b>margin-right: -50%;</b>
+        <b>transform: translate(-50%, -50%)</b> }
+  &lt;/style&gt;
+  &lt;section&gt;
+    &lt;h1&gt;Nicely centered&lt;/h1&gt;
+    &lt;p&gt;This text block is vertically centered.
+    &lt;p&gt;Horizontally, too, if the window is wide enough.
+  &lt;/section&gt;</pre>
+
+   <p>You can see the result in a <a href="https://www.w3.org/Style/Examples/007/center-example2">separate
+    document.</a>
+
+   </p><p>The 'margin-right: -50%' is needed to compensate the 'left:
+    50%'. The 'left' rule reduces the available width for the element
+    by 50%. The renderer will thus try to make lines that are no longer
+    than half the width of the container. By saying that the right
+    margin of the element is further to the right by that same amount,
+    the maximum line length is again the same as the container's width.
+
+   </p><p>Try resizing the window: You'll see that each sentence is on one
+    line when the window is wide enough. Only when the window is too
+    narrow for the whole sentence will the sentence be broken over
+    several lines. When you remove the 'margin-right: -50%' and resize
+    the window again, you'll see that the sentences will be broken
+    already when the window is still twice as wide as the text lines.
+
+   </p><p>(Using 'translate' for centering in the viewport was first
+    proposed by “Charlie” in <a href="http://stackoverflow.com/questions/5412912/align-vertically-using-css-3/16026893#answer-16026893">an answer on Stack Overflow.</a>)
+  </p></div>
+
+  <div class="section" id="banner">
+   <h2>Site navigation</h2>
+
+   <form action="https://www.w3.org/Help/search">
+    <ul>
+     <li class="home"><a href="https://www.w3.org/" rel="home"><img alt="W3C" src="./CSS_ centering things_files/w3c_home"></a>
+
+     </li><li><a href="https://www.w3.org/Style/CSS/">CSS home</a>
+
+     </li><li><a href="https://www.w3.org/Style/CSS/learning">Learn &amp; use</a>
+
+     </li><li><a href="https://www.w3.org/Style/CSS/software">Soft­ware</a>
+
+     </li><li><a href="https://www.w3.org/Style/CSS/current-work" title="Participate in the development of the CSS standard">Par­tic­i­pate / <span title="All specifications and drafts">drafts</span></a>
+
+     </li><li class="search"><input accesskey="E" id="inputField" maxlength="255" name="q" size="10"><button accesskey="G" name="sa" type="submit"><img alt="Search" src="./CSS_ centering things_files/search-button" title="Search"></button>
+    </li></ul>
+   </form>
+  </div>
+
+  <div class="section" id="endmatter">
+   <address class="vcard h-card"><img alt="" class="photo u-photo" src="./CSS_ centering things_files/bert3-small.jpg"> <a class="fn url p-name u-url" href="https://www.w3.org/People/Bos/">Bert
+    Bos</a>, <span class="role p-role">style activity lead</span><br>
+    <small><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright" rel="copyright">Copyright</a> © <!--@@@-->1994–2019<!--/@@@--> <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup></a></small> <a href="https://www.w3.org/Consortium/Legal/ipr-notice">Privacy policy</a></address>
+
+   <p>Created 5 May 2001;<br>
+    Last updated <!--@@@-->Tue 05 Nov 2019 07:12:55 PM UTC<!--/@@@-->
+  </p></div>
+
+  <div class="section" id="translations">
+   <h2>Languages</h2>
+
+   <ul>
+    <li><a href="http://www.carionltd.com/Style/Example007/center.html" hreflang="az" rel="alternate">Azərbaycan</a>
+
+    </li><li><a href="http://dichev.com/Style/Examples/007/center/" hreflang="bg" rel="alternate">Български</a>
+
+    </li><li><a href="http://www.ich-lerne-css.de/Style/Examples/007/center.html" hreflang="de" rel="alternate">Deutsch</a>
+
+    </li><li><a href="http://www.greekcom.org/Style/Examples/007/center.htm" hreflang="el" rel="alternate">Ελληνικά</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.en.html" hreflang="en" rel="alternate">English</a>
+
+    </li><li><a href="http://www.spanish-translator-services.com/espanol/t/007/center.html" hreflang="es" rel="alternate">Español</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.fr.html" hreflang="fr" rel="alternate">Français</a>
+
+    </li><li><a href="http://www.erasparsa.com/w3/Style/Examples/007/center/" hreflang="id" rel="alternate">Bahasa Indonesia</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.ja.html" hreflang="ja" rel="alternate" title="2019-10-02">日本語</a>
+
+    </li><li><a href="http://www.bjornenki.com/articles/w3_style_examples_007_center" hreflang="nb" rel="alternate">Norsk</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.nl.html" hreflang="nl" rel="alternate">Nederlands</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.pl.html" hreflang="pl" rel="alternate" title="2017-08-01">Polski</a>
+
+    </li><li><a href="http://www.internetbootcamp.net/007/center.html" hreflang="pt" rel="alternate">Português</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.pt_BR.html" hreflang="pt-br" rel="alternate">Português brasileiro</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.ru.html" hreflang="ru" rel="alternate" title="2017-08-22">Русский</a>
+
+    </li><li><a href="http://www.codingbasic.com/style/example/007/center.html" hreflang="th" rel="alternate">ไทย</a>
+
+    </li><li><a href="http://tl.tz8.de/style-examples-007-center.html" hreflang="tl" rel="alternate">Tagalog</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.uk.html" hreflang="uk" rel="alternate" title="2017-08-22">Українська</a>
+
+    </li><li><a href="http://www.300yards.com/007/center.html" hreflang="vi" rel="alternate">Tiếng Việt</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.zh_CN.html" hreflang="zh-cn" rel="alternate" title="2016-11-29">简体中文</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.zh_HK.html" hreflang="zh-hk" rel="alternate" title="2016-11-29">繁體中文</a>
+   </li></ul>
+
+   <p><a href="https://www.w3.org/Style/CSS/translating">About the translations</a>
+  </p></div>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-indent-step:1
+End:
+-->
+</body></html>
